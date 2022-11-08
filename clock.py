@@ -75,3 +75,22 @@ def structure():
     second_hand.pensize(1.4)
     second_hand.lt(90)
     second_hand.rt(second*6)
+def hour_move():
+    hour_hand.penup()
+    hour_hand.goto(0,0)
+    hour_hand.rt(1/120)
+    hour_hand.pendown()
+    hour_hand.fd(65)
+structure()
+def minute_move():
+    minute_hand.penup()
+    minute_hand.goto(0,0)
+    minute_hand.rt(1/10)
+    minute_hand.pendown() 
+    minute_hand.fd(100)
+def second_move():
+    second_hand.fd(120)
+    second_hand.penup()
+    second_hand.goto(0,0)
+    second_hand.rt(6)
+    second_hand.pendown() 
