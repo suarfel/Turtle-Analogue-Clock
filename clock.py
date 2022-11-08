@@ -94,3 +94,15 @@ def second_move():
     second_hand.goto(0,0)
     second_hand.rt(6)
     second_hand.pendown() 
+# infinite loop  
+
+while True :
+    second_move()
+    minute_move()
+    hour_move()
+    window_screen.update()
+    second_hand.clear()
+    minute_hand.clear()
+    hour_hand.clear()
+    time.sleep(1)
+turtle.done()
